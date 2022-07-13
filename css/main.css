@@ -1,6 +1,7 @@
 .Wrap {
-    max-width: 1900px;
+    max-width: 1920px;
     overflow: hidden;
+    background: rgb(252, 249, 238);
 }
 
 header {
@@ -14,7 +15,7 @@ header {
     z-index: 999;
 }
 
-.header .container{
+.header .container {
     width: 1200px;
     margin: 0 auto;
     color: #fff;
@@ -28,34 +29,450 @@ header {
 .header nav>* {
     flex: 1;
 }
+
 .header h1 {
+    margin: -15px 0 0 0;
     text-align: center;
 }
+
 .header nav>ul {
+    font-size: 15px;
+    font-weight: 300;
     display: flex;
     gap: 40px;
 }
+
 .header nav>ul.right {
     justify-content: flex-end;
 }
+
 .main_visual {
     position: relative;
     height: 100vh;
     background: url(../img/FY22_Night-Collection_Header_Desktop.jpg);
 }
+
+/* 슬로건 세로글씨로 적기 */
 .main .slogan {
     position: absolute;
     width: 1200px;
     top: 50%;
-    left: 50%;
+    left: 100%;
     transform: translate(-50%, -50%);
     text-align: right;
     z-index: 999;
 }
+
 .main .slogan h2 {
+    font-family: 'Nanum Brush Script';
     writing-mode: vertical-rl;
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 200;
+    color: #fff;
+    line-height: 80px;
+}
+
+/* 슬로건 가로로 적기 */
+/* .main .slogand {
+    position: absolute;
+    width: 1200px;
+    top: 85%;
+    left: 26.5%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+    z-index: 999;
+} */
+/* .main .slogan h4 {
+   
+    font-size: 40px;
+    font-weight: 100;
     color:#fff;
     line-height: 80px;
+} */
+/* 슬로건 가로로 적기 끝 안쓸거임 */
+
+.main_visual .wheel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 55px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    font-size: 0;
+}
+
+.main_visual .wheel span {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 10px;
+    background: #fff;
+    border-radius: 1px;
+    animation: wheel 0.9s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 13px;
+    }
+}
+
+
+
+.main_title {
+    margin: 150px 0;
+    text-align: center;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.main_title_video {
+    padding: 200px 0;
+    border-top: solid 2px rgb(186, 171, 143);
+    border-bottom: solid 2px rgb(186, 171, 143);
+    text-align: center;
+    color: #fff
+}
+
+.main_Director_say {
+    padding: 150px 0 50px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_Director_say .container {
+    display: flex;
+    border: 1px solid #ddd;
+}
+
+.main_Director_say .text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 200px 5px;
+}
+
+.main_Director_say .text h2 {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.main_Director_say .text p {
+    padding: 30px 0 0 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+
+
+.main_sub_title {
+    padding: 100px 0 30px 0;
+    text-align: center;
+}
+
+.main_sub_title h2 {
+    margin: 0 0 30px 0;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.main_sub_title p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.main_slide {
+    padding: 0 0 100px 0;
+
+}
+
+.main_slide .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.main_slide .container figure {
+    text-align: center;
+}
+
+.main_slide .container h3 {
+    margin: 0 0 40px 0;
+    padding: 5px 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.main_slide .container h3::before {
+    content: '';
+    display: block;
+    width: 300px;
+    border-bottom: 1px solid #ddd;
+    margin: 5px auto;
+}
+
+.main_slide .container h3::after {
+    content: '';
+    display: block;
+    width: 300px;
+    border-bottom: 1px solid #ddd;
+    margin: 5px auto;
+}
+
+/* .main_slide .container h4 {
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 10px;
+} */
+
+.main_slide .container h4 {
+    margin: 5px 0;
+    min-height: 40px;
+    height: auto;
+}
+
+
+.main_slide .container p {
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 10px;
+}
+
+.main_slide .container .box {
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.main_slide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.main_slide .slick-arrow:hover {
+    opacity: 1;
+    transition: border 0.5s;
+}
+
+.main_slide .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.main_slide .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.main_manual {
+    padding: 0 0 50px 0;
+    text-align: left;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_manual::before {
+    content: '';
+    display: block;
+    width: 1200px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+.main_manual h2 {
+    text-align: left;
+    padding: 50px 0 50px 0;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.main_manual p {
+    font-weight: 300;
+}
+
+
+.main_tasting_note {
+    padding: 0 0 100px 0;
+    text-align: left;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_tasting_note::before {
+    content: '';
+    display: block;
+    width: 1200px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+.main_tasting_note .container {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+}
+
+.main_tasting_note h2 {
+    text-align: left;
+    padding: 50px 0;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.main_tasting_note .container img {
+    width: 139px;
+    height: 184px;
+    vertical-align: middle;
+}
+
+.main_tasting_note .inner_note {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+}
+
+.main_tasting_note .inner_note p {
+    margin: 20px 0 50px 0;
+    font-weight: 300;
+}
+
+.main_tasting_note::after {
+    content: '';
+    display: block;
+    width: 1200px;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+.main_present_cover {
+    padding: 100px 0 100px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_present_cover .container {
+    display: flex;
+    border: 1px solid #ddd;
+}
+
+.main_present_cover .text {
+    text-align: center;
+    margin: 0 auto;
+    padding: 250px 0 0 0;
+}
+
+.main_present_cover .text h2 {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.main_present_cover .text p {
+    padding: 30px 0 0 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+
+
+
+/* 하단 선물세트  */
+
+.main_present_title {
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.main_present_title h2 {
+    margin: 0 0 30px 0;
+    font-size: 31px;
+    font-weight: 200;
+}
+
+.main_present {
+    padding: 0 0 100px 0;
+
+}
+
+.main_present .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.main_present .container figure {
+    text-align: center;
+}
+
+.main_present .container h3 {
+    margin: 0 0 40px 0;
+    padding: 5px 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.main_present .container h3::before {
+    content: '';
+    display: block;
+    width: 300px;
+    border-bottom: 1px solid #ddd;
+    margin: 5px auto;
+}
+
+.main_present .container h3::after {
+    content: '';
+    display: block;
+    width: 300px;
+    border-bottom: 1px solid #ddd;
+    margin: 5px auto;
+}
+
+
+.main_present .container h4 {
+    margin: 5px 0;
+    min-height: 40px;
+    height: auto;
+}
+
+
+.main_present .container p {
+    margin: 0 0 10px 0;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 10px;
+}
+
+.main_present .container .box {
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    width: 200px;
 }
