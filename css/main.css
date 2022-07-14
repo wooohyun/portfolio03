@@ -1,4 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+@font-face {
+    font-family: 'KyoboHandwriting2020A';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .Wrap {
+    position: relative;
     max-width: 1920px;
     overflow: hidden;
     background: rgb(252, 249, 238);
@@ -65,9 +82,13 @@ header {
 
 .main .slogan h2 {
     font-family: 'Nanum Brush Script';
+    font-family: 'KyoboHandwriting2020A';
+    font-family: 'MapoFlowerIsland';
+    /* font-family: 'Nanum Pen Script'; */
+
     writing-mode: vertical-rl;
-    font-size: 50px;
-    font-weight: 200;
+    font-size: 40px;
+    font-weight: 100;
     color: #fff;
     line-height: 80px;
 }
@@ -291,7 +312,7 @@ header {
 
 .main_manual {
     padding: 0 0 50px 0;
-    text-align: left;
+    text-align: center;
     width: 1200px;
     margin: 0 auto;
 }
@@ -305,7 +326,7 @@ header {
 }
 
 .main_manual h2 {
-    text-align: left;
+    text-align: center;
     padding: 50px 0 50px 0;
     font-size: 21px;
     font-weight: 500;
@@ -318,7 +339,7 @@ header {
 
 .main_tasting_note {
     padding: 0 0 100px 0;
-    text-align: left;
+    text-align: center;
     width: 1200px;
     margin: 0 auto;
 }
@@ -338,7 +359,7 @@ header {
 }
 
 .main_tasting_note h2 {
-    text-align: left;
+    text-align: center;
     padding: 50px 0;
     font-size: 21px;
     font-weight: 500;
@@ -351,7 +372,7 @@ header {
 }
 
 .main_tasting_note .inner_note {
-    display: flex;
+
     flex: 1;
     gap: 20px;
 }
@@ -359,6 +380,11 @@ header {
 .main_tasting_note .inner_note p {
     margin: 20px 0 50px 0;
     font-weight: 300;
+}
+
+.main_tasting_note .inner_note .detail {
+    letter-spacing: -0.05em;
+    line-height: 1.6;
 }
 
 .main_tasting_note::after {
@@ -405,7 +431,7 @@ header {
 /* 하단 선물세트  */
 
 .main_present_title {
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -464,7 +490,7 @@ header {
 
 
 .main_present .container p {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     padding: 10px 0;
     font-size: 15px;
     font-weight: 300;
@@ -475,4 +501,116 @@ header {
     border: 1px solid #ddd;
     margin: 0 auto;
     width: 200px;
+}
+
+.main_story {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.main_story h2 {
+    margin: 0 0 50px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.main_story .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.main_story .detail_story {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.main_story h3 {
+    padding: 30px 0 10px 0;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.main_story p {
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.main_story .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    font-size: 0;
+    border: none;
+    background: transparent;
+
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.main_story .slick-arrow:hover {
+    opacity: 1;
+    transition: border 0.5s;
+}
+
+.main_story .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.main_story .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.footer {
+    background: #fff;
+    padding: 100px 0;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer .container .logo {
+    margin: 0 0 15px 0;
+}
+
+
+.footer .container .logo_p {
+    margin: 0 0 30px 0;
+    font-weight: 400;
+}
+
+
+.footer .container ul li {
+    display: inline-block;
+    padding: 0 20px;
+    margin: 0 0 50px 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.footer .container .sns {
+    margin: 0 0 30px 0;
+}
+
+.footer .container i {
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.footer .container .copyright {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.3;
 }

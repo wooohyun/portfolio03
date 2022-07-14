@@ -17,5 +17,9 @@ $("#main_title_video").YTPlayer({
     slidesToShow: 3,
 });
 
+  $('.main_story .container').slick({
+    slidesToShow: 3,
+});
+
 
 });
