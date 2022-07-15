@@ -179,7 +179,7 @@ header {
 
 .main_Director_say .text h2 {
     font-size: 21px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.2em;
 }
 
@@ -382,6 +382,11 @@ header {
     font-weight: 300;
 }
 
+.main_tasting_note .inner_note .top {
+    margin: 20px 0 50px 0;
+    font-weight: 400;
+}
+
 .main_tasting_note .inner_note .detail {
     letter-spacing: -0.05em;
     line-height: 1.6;
@@ -438,7 +443,7 @@ header {
 .main_present_title h2 {
     margin: 0 0 30px 0;
     font-size: 31px;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .main_present {
@@ -501,6 +506,13 @@ header {
     border: 1px solid #ddd;
     margin: 0 auto;
     width: 200px;
+}
+
+.main_present_cover .text h2{
+    font-weight: 500;
+}
+.main_present_cover .text p{
+    font-weight: 300;
 }
 
 .main_story {
@@ -582,13 +594,13 @@ header {
 }
 
 .footer .container .logo {
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
 }
 
 
 .footer .container .logo_p {
-    margin: 0 0 30px 0;
-    font-weight: 400;
+    margin: 0 0 50px 0;
+    font-weight: 300;
 }
 
 
