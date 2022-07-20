@@ -511,9 +511,11 @@ header {
 .main_present_cover .text h2 {
     font-weight: 500;
 }
+
 .main_present_cover .text p {
     font-weight: 300;
 }
+
 .main_story {
     padding: 100px 0;
     text-align: center;
