@@ -81,11 +81,7 @@ header {
 }
 
 .main .slogan h2 {
-    font-family: 'Nanum Brush Script';
-    font-family: 'KyoboHandwriting2020A';
     font-family: 'MapoFlowerIsland';
-    /* font-family: 'Nanum Pen Script'; */
-
     writing-mode: vertical-rl;
     font-size: 40px;
     font-weight: 100;
@@ -114,7 +110,7 @@ header {
 
 .main_visual .wheel {
     position: absolute;
-    bottom: 10px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     width: 30px;
