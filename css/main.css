@@ -138,8 +138,6 @@ header {
     }
 }
 
-
-
 .main_title {
     margin: 150px 0;
     text-align: center;
@@ -207,6 +205,11 @@ header {
 .main_slide {
     padding: 0 0 100px 0;
 
+}
+
+.box:hover{
+background: #504f4e;
+color: #fff;
 }
 
 .main_slide .container {
